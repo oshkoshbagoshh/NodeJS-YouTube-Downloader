@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-youtube-downloader",
+  "version": "1.0.0",
+  "description": "download youtube videos into your Downloads folder as an mp4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oshkoshbagoshh/NodeJS-YouTube-Downloader.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "CLI",
+    "YT"
+  ],
+  "author": "AJ Javadi (github.com/oshkoshbagoshh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oshkoshbagoshh/NodeJS-YouTube-Downloader/issues"
+  },
+  "homepage": "https://github.com/oshkoshbagoshh/NodeJS-YouTube-Downloader#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0",
+    "ytdl-core": "^4.11.5"
+  }
+}

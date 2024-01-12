@@ -1,36 +1,3 @@
-# AJ's Simple Node JS YouTube Downloader
-
-## Description
-This is a simple node JS CLI program that asks the user to input the URL for the YouTube Video they want to download.
-
-It then downloads to the users ~/Downloads folder with the file name of the YouTube Video
-
-## Installation
-
-```bash
-npm install
-```
-
-## Features
-- Packages Used:
-  -   "prompt-sync": "^4.2.0",
-  -   "ytdl-core": "^4.11.5"
-
-
-## Usage
-
-```bash
-
-node download.js
-
-```
-
-----
-<!-- 
-## Code Used:
-
-```javascript
-
 const fs = require('fs');
 const ytdl = require('ytdl-core');
 const path = require('path');
@@ -47,7 +14,9 @@ if (!ytdl.validateURL(videoUrl)) {
 
 // Set the output directory to the user's downloads folder
 const outputDirectory = path.join(require('os').homedir(), 'Downloads');
-const outputFilename = 'video.mp4'; // You could use ytdl to get the title and make a filename from it
+// const outputFilename = 'video.mp4'; // You could use ytdl to get the title and make a filename from it
+const outputFilename = ytdl.getURLVideoID(videoUrl) + '.mp4';
+console.log(`Saving video to ${outputDirectory}/${outputFilename}`);
 const outputPath = path.join(outputDirectory, outputFilename);
 
 try {
@@ -63,9 +32,4 @@ try {
   console.error('An error occurred:', error.message);
 }
 
-``` -->
 
----
-## Contributions
-- AJ Javadi(github.com/oshkoshbagoshh)
-  
