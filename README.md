@@ -67,5 +67,8 @@ try {
 
 ---
 ## Contributions
-- AJ Javadi(github.com/oshkoshbagoshh)
+- AJ Javadi
+- github.com/oshkoshbagoshh
+- amirjavadi25@gmail.com
+- 
   
