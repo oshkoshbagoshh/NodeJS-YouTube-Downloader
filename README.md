@@ -1,11 +1,22 @@
 # AJ's Simple Node JS YouTube Downloader
 
 ## Description
-This is a simple node JS CLI program that asks the user to input the URL for the YouTube Video they want to download.
+This is a simple node JavaScript CLI program that asks the user to input the URL for the YouTube Video(no audio) they want to download.
 
-It then downloads to the users ~/Downloads folder with the file name of the YouTube Video
+It then downloads to the users ~/Downloads folder with the file name of the YouTube Video as an mp4 file.
+
+Additional features will be coming in the near future (such as a GUI, audio, etc.)
+
+## Usage
+There are ethical concerns and guidelines / terms of service we have to follow of course, so this is strictly for education purposes 🤫
+
+
+
 
 ## Installation
+Assuming you have node installed, just run the code below. If you don't have node installed. Google how to get it.
+
+
 
 ```bash
 npm install
@@ -70,5 +81,5 @@ try {
 - AJ Javadi
 - github.com/oshkoshbagoshh
 - amirjavadi25@gmail.com
-- 
+  
   
